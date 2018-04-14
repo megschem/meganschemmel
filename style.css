@@ -1,0 +1,269 @@
+html, body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: .8rem;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  width: 100vw;
+}
+
+body {
+  display: grid;
+}
+
+.container {
+  background-color: #000;
+  color: #fff9ce;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 24px 34px 101px 101px 101px 80px 46px 46px 50px 57px 57px 57px 57px 57px 45px 30px 30px;
+  min-height: 667px;
+  min-width: 375px;
+  width: 700px;
+/*   width: 100%; */
+  margin: 0 auto;
+}
+
+.header {
+  color: #f0d109;
+  font-family: "Petit Formal Script", cursive;
+  font-size: 2.5rem;
+/*   grid-area: header; */
+  grid-column: 1 / 13; 
+  grid-row: 1 / 2; 
+  align-self: center;
+  justify-self: center;
+}
+
+.subheader {
+/*   grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;*/
+  display: grid;
+/*   grid-area: subheader; */
+  justify-self: center;
+}
+.vo-artist { 
+  grid-column: 2 / 7;
+  grid-row: 2 / 6;
+} 
+
+.divider-1 { 
+  grid-column: 6 / 8;
+  grid-row: 2 / 3;
+} 
+
+.stage-combatant { 
+  grid-column: 7 / 12;
+  grid-row: 2 / 3;
+} 
+
+.divider-2 {
+  grid-column: 11 / 13;
+  grid-row: 2 / 3;
+  display: none;
+}
+
+.actor { 
+  grid-column: 2 / 5;
+  grid-row: 3 / 4;
+  align-self: start;
+} 
+
+.divider-3 { 
+  grid-column: 4 / 6;
+  grid-row: 3 / 4;
+  align-self: start;
+} 
+
+.singer { 
+  grid-column: 6 / 8;
+  grid-row: 3 / 4;
+  align-self: start;
+}
+
+.divider-4 { 
+  grid-column: 8 / 10;
+  grid-row: 3 / 4;
+  align-self: start;
+}
+
+.dancer { 
+  grid-column: 9 / 12;
+  grid-row: 3 / 4;
+  align-self: start;
+}
+
+.hero-img {
+  grid-column: 2 / 12;
+  grid-row: 4 / 8;
+  background-image: url(http://via.placeholder.com/365x385);
+  background-repeat: no-repeat;
+  margin: 0 auto; 
+  max-height: 80vh;
+  max-width: 95vw;
+  min-height: 385px;
+  min-width: 667px;
+}
+
+.hero-overlay {
+  grid-column: 1 / 13;
+  grid-row: 7 / 10;
+  background-color: rgba(255,249,206,0.5);
+  width: 100%;
+  min-width: 667px;
+}
+
+.social-link {
+/*   font-weight: 600; */
+  align-self: center;
+}
+
+.aa-img {
+  grid-column: 2 / 6;
+  grid-row: 8 / 9;
+}
+
+.mv-img {
+  grid-column: 6 / 10;
+  grid-row: 8 / 9;
+}
+
+.email-img {
+  grid-column: 10 / 13;
+  grid-row: 8 / 9;
+}
+
+.li-img {
+  grid-column: 2 / 6;
+  grid-row: 9 / 10;
+}
+
+.fb-img {
+  grid-column: 6 / 10;
+  grid-row: 9 / 10;
+}
+
+.tw-img {
+  grid-column: 10 / 12;
+  grid-row: 9 / 10;
+}
+
+.projects-photos {
+  font-size: 1.2rem;
+  grid-column: 1 / 9;
+  grid-row: 10 / 11;
+  align-self: center;
+  padding-left: 1rem;
+  justify-self: left;
+}
+
+.carousel-img {
+  background-color: blue;
+  grid-column: 1 / 13;
+  grid-row: 11 / 17;
+}
+
+/* .carousel-numbers {
+  font-size: 1rem;
+  grid-column: 2 / 12;
+  grid-row: 11 / 16;
+  justify-self: center;
+} */
+
+.numbers {
+  background-color: red;
+  color: #f0d109;
+  font-size: 1.3rem;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+}
+
+.number1 {
+  grid-column: 2 / 3;
+  grid-row: 16 / 17;
+}
+
+.number2 {
+  grid-column: 3 / 4;
+  grid-row: 16 / 17;
+}
+
+.number3 {
+  grid-column: 4 / 5;
+  grid-row: 16 / 17;
+}
+
+.number4 {
+  grid-column: 5 / 6;
+  grid-row: 16 / 17;
+}
+
+.number5 {
+  grid-column: 6 / 7;
+  grid-row: 16 / 17;
+}
+
+.number6 {
+  grid-column: 7 / 8;
+  grid-row: 16 / 17;
+}
+
+.number7 {
+  grid-column: 8 / 9;
+  grid-row: 16 / 17;
+}
+
+.number8 {
+  grid-column: 9 / 10;
+  grid-row: 16 / 17;
+}
+
+.number9 {
+  grid-column: 10 / 11;
+  grid-row: 16 / 17;
+}
+
+.number10 {
+  grid-column: 11 / 12;
+  grid-row: 16 / 17;
+}
+
+.email {
+  grid-column: 1 / 13;
+  grid-row: 17 / 18;
+  align-self: center;
+  justify-self: center;
+}
+.copyright {
+  font-size: .6rem;
+  grid-column: 1 / 13;
+  grid-row: 18 / 19;
+  align-self: center;
+  justify-self: center;
+}
+
+
+
+/*  grid-template-columns: repeat(5, 1fr)*/
+/*  grid-template-rows: repeat(5, 100px)*/
+/*  align-items: center; start; end*/
+/*  justify-items: center;*/
+/*  place-items: center center; stretch stretch*/
+/*  justify-content: end; start; space-around; space-between; (x-axis/rows)*/
+/*  align-content: (y-axis/columns)*/
+/*  grid-template-columns: 1fr min(667px, 10fr) 1fr; */
+/* Keyword values
+grid-auto-flow: row;
+grid-auto-flow: column;
+grid-auto-flow: dense;
+grid-auto-flow: row dense;
+grid-auto-flow: column dense;
+If it is omitted, a “sparse” algorithm is used, where the placement algorithm only ever moves “forward” in the grid when placing items, never backtracking to fill holes. This ensures that all of the auto-placed items appear “in order”, even if this leaves holes that could have been filled by later items.
+
+Global values
+grid-auto-flow: inherit; 
+grid-auto-flow: initial;
+grid-auto-flow: unset; */
+
+/* create an empty "b element" <b></b> when you want an empty area with a background color.  Grid CSS needs an element in order to style it */
